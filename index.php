@@ -75,15 +75,41 @@ $frequent_questions = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <!-- Link cdn fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link css file -->
     <link rel="stylesheet" href="css/style.css">
     <title>PHP Google</title>
 </head>
 <body>
     <!-- HEADER -->
-    <header></header>
+    <header class="container">
+        <!-- Header top bar -->
+        <section class="header-top">
+            <div class="logo-section">
+                <a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
+                <span>Privacy e termini</span>
+            </div>
+            <div class="icon-section">
+                <i class="fas fa-ellipsis-v"></i>
+                <a href="#"><img id="user-icon" src="images/user.png" alt="user"></a> 
+            </div>
+        </section>   
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Introduzione</a></li>
+                <li><a href="#">Norme sulla privacy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+                <li><a href="#">Tecnologie</a></li>
+                <li class="active"><a href="#">Domande frequenti</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <hr>
+
     <!-- MAIN -->
-    <main>
+    <main class="container-small">
         <!-- Foreach for cycling in the frequent questions array -->
         <?php foreach($frequent_questions as $frequent_question) : ?>
         <!-- Print foreach cycle data -->
