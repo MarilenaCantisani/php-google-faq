@@ -84,3 +84,26 @@ ul li a:hover {
 hr {
     border: .5px solid #5f6368;
 }
+
+/*// MAIN */
+main {
+    padding-top: 100px;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #3c4043;
+}
+p, ol, li {
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+    margin: 20px 0;
+    line-height: 20px;
+}
+ol li {
+    margin-left: 12px;
+    padding-left: 10px;
+}
+ol li ol li {
+    margin-left: 14px;
+}
